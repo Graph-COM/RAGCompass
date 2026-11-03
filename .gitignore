@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# data and everything the scripts write
+outputs/
+dataset/
+*_Qwen3-Embedding-0.6B*/
+wandb/
+.retriever_cache/
+.cache/

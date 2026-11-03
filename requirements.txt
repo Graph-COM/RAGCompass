@@ -1,0 +1,31 @@
+# Versions of the environment the paper's experiments ran in (Python 3.10).
+# Packages given as a range were not recorded exactly; the range is what
+# resolves alongside the pinned ones.
+
+# Router, baselines and analyses
+torch==2.11.0
+transformers==4.57.1
+huggingface-hub==0.35.0
+scikit-learn==1.7.2
+numpy>=2.2,<2.3
+scipy>=1.15,<1.16
+pandas==2.3.2
+pyarrow>=20,<26
+matplotlib>=3.10,<3.11
+tqdm>=4.66
+wandb==0.21.4
+
+# Retrieval + reader pipeline (Stage 0, RRF / MoR, reader relabeling)
+openai==1.108.1
+python-igraph==0.11.9
+fastembed==0.8.0
+pylate==1.6.0
+voyager==2.1.0
+sentence-transformers==5.3.0
+datasets==4.1.0
+accelerate==1.10.1
+
+# HippoRAG2 indexing and the R3AG judge additionally need vLLM 0.10.2
+# (`pip install vllm==0.10.2`). It requires a different torch build (2.8.0), so
+# it must live in a separate environment; pass that interpreter through
+# KG_PYTHON / PYTHON (see README, "Setup").
