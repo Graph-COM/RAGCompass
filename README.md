@@ -1,6 +1,6 @@
 # RAGCompass: Generalizable Retriever Routing via Reranking
 
-Code for the paper *RAGCompass: Generalizable Retriever Routing via Reranking* by Valentin Six, Mufei Li, Dongqi Fu, Yinglong Xia, Hong Li and Pan Li. The data is on the Hugging Face Hub at [Graph-COM/RAGCompass](https://huggingface.co/datasets/Graph-COM/RAGCompass).
+Code for the paper [*RAGCompass: Generalizable Retriever Routing via Reranking*](https://arxiv.org/abs/2611.05596) by Valentin Six, Mufei Li, Dongqi Fu, Yinglong Xia, Hong Li and Pan Li. The data is on the Hugging Face Hub at [Graph-COM/RAGCompass](https://huggingface.co/datasets/Graph-COM/RAGCompass).
 
 Given a query and the passage sets returned by several retrievers, RAGCompass picks the retriever whose passages will produce the best answer. It reads the retrieved passages themselves: a reranker backbone scores each `(query, passage set)` pair, and a small comparison head ranks the candidates. Neither component has retriever-specific parameters, so the router stays defined for a retriever or corpus it was not trained on.
 
@@ -181,9 +181,12 @@ The code is released under the MIT License (see `LICENSE`). The retrieval pipeli
 
 ```bibtex
 @misc{six2026ragcompass,
-  title  = {RAGCompass: Generalizable Retriever Routing via Reranking},
-  author = {Six, Valentin and Li, Mufei and Fu, Dongqi and Xia, Yinglong and Li, Hong and Li, Pan},
-  year   = {2026},
-  note   = {Preprint}
+  title         = {RAGCompass: Generalizable Retriever Routing via Reranking},
+  author        = {Six, Valentin and Li, Mufei and Fu, Dongqi and Xia, Yinglong and Li, Hong and Li, Pan},
+  year          = {2026},
+  eprint        = {2611.05596},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2611.05596}
 }
 ```
